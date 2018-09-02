@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General */
+
+.app-wrapper {
+  display: flex;
+}
+
+.app-sidemenu {
+  flex: 0 0 65%;
+}
+
+.app-content {
+  flex: 1;
+}
+
+/* Side Menu */
+
+.side-menu {
+  height: 100vh;
+}
+
+.top-menu {
+  border-left: none;
+}
+
+
+/* Content */
+
+.content-container {
+  padding: 0 15px;
+}
+
+
