@@ -5,7 +5,9 @@ import { EventListItem } from "./EventListItem";
 export class EventList extends Component {
   render() {
     return (
-      <List>
+      <List className="event-list">
+        <EventListItem />
+        <EventListItem />
         <EventListItem />
       </List>
     );

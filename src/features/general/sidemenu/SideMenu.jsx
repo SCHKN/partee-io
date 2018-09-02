@@ -20,25 +20,20 @@ export default class SideMenu extends Component {
                             active={activeItem === 'Event Dashboard'}
                             onClick={this.handleItemClick}
                         />
-                        <Menu.Item
-                            name='Subsection Two'
-                            active={activeItem === 'Subsection Two'}
-                            onClick={this.handleItemClick}
-                        />
                     </Menu.Menu>
                 </Menu.Item>
 
                 <Menu.Item>
-                    <Menu.Header>Another Section</Menu.Header>
+                    <Menu.Header>Personal</Menu.Header>
                     <Menu.Menu>
                         <Menu.Item
-                            name='Subsection One'
-                            active={activeItem === 'Subsection One'}
+                            name='Profile'
+                            active={activeItem === 'Profile'}
                             onClick={this.handleItemClick}
                         />
                         <Menu.Item
-                            name='Subsection Two'
-                            active={activeItem === 'Subsection Two'}
+                            name='Shopping List'
+                            active={activeItem === 'Shopping List'}
                             onClick={this.handleItemClick}
                         />
                     </Menu.Menu>

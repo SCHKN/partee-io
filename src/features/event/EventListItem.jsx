@@ -10,12 +10,13 @@ import {
   Button,
   Progress
 } from "semantic-ui-react";
+import EventAttendee from "./EventAttendee";
 
 export class EventListItem extends Component {
   render() {
     return (
       <Segment.Group raised>
-        <Segment>
+        <Segment color="blue">
           <Item.Group>
             <Item>
               <Image
@@ -40,64 +41,34 @@ export class EventListItem extends Component {
           </Item.Group>
         </Segment>
         <Segment>
+          <Label attached="top">Event Stats</Label>
           <Statistic.Group widths="four" size="mini">
             <Statistic>
-              <Statistic.Value>
-                <Icon name="user" />
-                28
-              </Statistic.Value>
+              <Statistic.Value>28</Statistic.Value>
               <Statistic.Label>Attendees</Statistic.Label>
             </Statistic>
 
             <Statistic>
-              <Statistic.Value>
-                <Icon name="car" />
-                14
-              </Statistic.Value>
+              <Statistic.Value>14</Statistic.Value>
               <Statistic.Label>Cars</Statistic.Label>
             </Statistic>
 
             <Statistic>
-              <Statistic.Value>
-                <Icon name="bed" />3
-              </Statistic.Value>
+              <Statistic.Value>3</Statistic.Value>
               <Statistic.Label>Beds</Statistic.Label>
             </Statistic>
 
             <Statistic>
-              <Statistic.Value>
-                <Icon name="lemon outline" />7
-              </Statistic.Value>
+              <Statistic.Value>7</Statistic.Value>
               <Statistic.Label>Products</Statistic.Label>
             </Statistic>
           </Statistic.Group>
         </Segment>
         <Segment secondary>
           <List horizontal>
-            <List.Item>
-              <Image
-                avatar
-                src="https://randomuser.me/api/portraits/women/65.jpg"
-              />
-            </List.Item>
-            <List.Item>
-              <Image
-                avatar
-                src="https://randomuser.me/api/portraits/women/64.jpg"
-              />
-            </List.Item>
-            <List.Item>
-              <Image
-                avatar
-                src="https://randomuser.me/api/portraits/women/63.jpg"
-              />
-            </List.Item>
-            <List.Item>
-              <Image
-                avatar
-                src="https://randomuser.me/api/portraits/women/62.jpg"
-              />
-            </List.Item>
+            <EventAttendee />
+            <EventAttendee />
+            <EventAttendee />
           </List>
           <Button floated="right">Preview</Button>
           <Button floated="right" color="blue">

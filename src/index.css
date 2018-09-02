@@ -24,6 +24,8 @@ body {
   height: 100vh;
 }
 
+/* Top Menu */
+
 .top-menu {
   border-left: none;
 }
@@ -35,4 +37,11 @@ body {
   padding: 0 15px;
 }
 
+/* Event List */
+
+.event-list {
+  max-height: 840px;
+  overflow: scroll;
+  padding-right: 10px !important;
+}
 
